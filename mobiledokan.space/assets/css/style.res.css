@@ -1,0 +1,720 @@
+@media screen and (max-width: 991px) {
+    .main-navbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 85% !important;
+        background-color: #f2f3f5 !important;
+        z-index: 9999;
+        transition: all 0.3s ease-in-out;
+        transform: translateX(-100%);
+    }
+    .main-navbar.active {
+        transform: translateX(0);
+        height: 120vh !important;
+        overflow-y: auto !important;
+    }
+    .main-navbar .nav>.nav-item {
+        border-bottom: 2px solid #ddd;
+    }
+    .main-navbar .nav>.nav-item>.nav-link {
+        padding-left: 0px !important;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    /* ================ start ================ */
+    /* header style start */
+    .topnav .logo-img {
+        max-width: 250px;
+    }
+    /* header style end */
+    /********* sidebar common style start **********/
+    aside.sidebar {
+        width: 360px;
+        border-radius: 0;
+    }
+    /********* sidebar common style end **********/
+    /* reviews page start */
+    .review-card-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* reviews page end */
+    /* showrooms page start */
+    .query-showrooms .select-boxes {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .query-showrooms .select-boxes select,
+    .query-showrooms .select-boxes button {
+        font-size: 1rem;
+    }
+    .add-new-showrooms .new-showrooms-form .showroom-input-group {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .add-new-showrooms .new-showrooms-form input,
+    .add-new-showrooms .new-showrooms-form select,
+    .new-showrooms-form .submit-new-showroom-btn input[type="submit"] {
+        font-size: 1rem;
+    }
+    .new-showrooms-form .submit-new-showroom-btn input[type="submit"] {
+        width: unset;
+    }
+    .service-center .select-boxes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* showrooms page end */
+    /* contact page start */
+    .msg-form-body .msg-form-group {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* contact page end */
+    /* videos page start */
+    .featured-videos-body {
+        background-color: #404040;
+    }
+    .featured-videos-body .optional-videos .video {
+        color: #ffffff;
+    }
+    /* videos page start */
+    .all-videos .optional-videos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    /* videos page end */
+    /* comparision page start */
+    .comparision-gallery-wrapper .comparision-gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+    }
+    .comparision-gallery-wrapper .comparision-gallery .comparision-card-body h3 {
+        font-size: 0.875rem;
+    }
+    /* comparision page end */
+    /* brands page end */
+    /* footer start */
+    #footer .footer-navbar-wrapper {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    #footer .footer-navbar .footer-navbar-wrapper .footer-item {
+        flex-basis: 50%;
+    }
+    /* footer end */
+    /* ================ end ================ */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .commn-btn {
+        font-size: 0.925rem;
+    }
+    .social-card {
+        width: 100% !important;
+    }
+    .mobile-showcase-body .product-card {
+        flex-basis: 32%;
+    }
+    .latest-news-reviews-img-wrapper {
+        max-height: 150px;
+    }
+    /* ===================start===================== */
+    /* key specs */
+    .aditional-info .aditional-item {
+        flex-basis: 31%;
+    }
+    /* mobile thumbnails showcase */
+    .mobile-thumbs-showcase .phone-gallery {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    /* all mobiles start */
+    .populated-items .products,
+    .populated-news .products {}
+    .homep .populated-items .products {}
+    .pofun .populated-items .products {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .populated-news .products,
+    .populated-compares .products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .populated-items .products .product-box,
+    .populated-news .products .review-card,
+    .populated-compares .products .product-card {
+        min-width: unset;
+        max-width: unset;
+    }
+    .populated-news .products .review-card {
+        margin: 0.325rem;
+    }
+    .all-mobiles .product-slider .brands {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+    }
+    .all-mobiles .product-slider .brands li {
+        min-width: unset;
+        max-width: unset;
+    }
+    /* choose your budget start */
+    .budget-grid .budget-list {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .hombudg .budget-list {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .budget-grid .budget-list li {
+        min-width: unset;
+        max-width: unset;
+    }
+    /* choose your budget start */
+    /* all mobiles end */
+    /* top 10 start */
+    .prdct-item_dtls .item-dtls_body ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .product-grid .product-item .product-item-img {
+        margin-bottom: unset;
+    }
+    /* top 10 end */
+    /* reviews page start */
+    .review-card-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .review-card .review-body h2 {
+        font-size: 1rem;
+    }
+    .review-card .review-meta {
+        font-size: unset;
+    }
+    .review-card .review-card-img .stars {
+        font-size: unset;
+    }
+    /* reviews page end */
+    /* comparision page start */
+    .comparision-gallery-wrapper .comparision-gallery {
+        gap: 0.75rem;
+    }
+    .comparision-gallery-wrapper .comparision-gallery .comparision-card-body h3 {
+        font-size: 1rem;
+    }
+    /* comparision page end */
+    /* ====================end==================== */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    /* header style start */
+    /********** main navigation menu **********/
+    .main-navbar {
+        position: static !important;
+    }
+    .main-navbar .nav-item {
+        border: 0 !important;
+    }
+    .main-navbar .nav-item .nav-link {
+        padding-left: 0.85rem;
+    }
+    /* header style end */
+    .mobile-showcase-body .product-card {
+        flex-basis: 32%;
+    }
+    .main-navbar {
+        position: static !important;
+    }
+    .main-navbar .nav-item {
+        border: 0 !important;
+    }
+    .main-navbar .nav-item .nav-link {
+        padding-left: 0.85rem;
+    }
+    /* ===================start==================== */
+    /* latest news end */
+    .sml-img-wrapper a {
+        font-size: 0.75rem;
+    }
+    /* overall review */
+    /* trip advisors */
+    .trip-advisors .col-6 .trip-item {
+        margin-bottom: 0;
+    }
+    /* mobile thumbnails showcase */
+    .mobile-thumbs-showcase .phone-gallery {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    /* top 10 start */
+    .prdct-item_dtls .item-dtls_body ul li.dtls-body_spcftn {
+        font-size: unset;
+    }
+    /* top 10 end */
+    /* news page start */
+    .product-grid .product-item .line-clamp {
+        -webkit-line-clamp: 4;
+    }
+    /* news page end */
+    /* videos page start */
+    .all-videos .optional-videos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .all-videos .optional-videos .video .video-date {
+        font-size: 0.875rem;
+    }
+    /* videos page end */
+    /* brands page end */
+    /* footer start */
+    #footer .footer-navbar .footer-navbar-wrapper .footer-item {
+        flex-basis: unset;
+    }
+    /* footer end */
+    /* ===================end==================== */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    /* ====================start======================= */
+    /* sidebar style */
+    aside.sidebar {
+        background-color: #ffffffd9 !important;
+        width: unset;
+        height: unset;
+        overflow-y: unset;
+    }
+    /* ====================end======================= */
+    /* mobile showcase start */
+    .mobile-showcase {
+        border-radius: 0 0.25rem 0.25rem 0;
+    }
+    .mobile-showcase-body .product-card {
+        flex-basis: 23.9%;
+    }
+    /* mobile showcase end */
+    /* ====================start======================= */
+    /* overall review */
+    /* mobile thumbnails showcase */
+    .mobile-thumbs-showcase .phone-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    /* videos page start */
+    .all-videos .optional-videos {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    /* videos page end */
+    /* ====================end======================= */
+}
+
+/* Extra large devices (large laptops and desktops, 1400px and up) */
+
+@media screen and (min-width: 1400px) {
+    /* brands page start */
+    .hbrands .brand-list .brand-list-item {
+        min-width: unset;
+    }
+    .sml-img-wrapper a {
+        font-size: 0.875rem;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    /* ==================== start ==================== */
+    #filterForm {
+        height: 235vh;
+        overflow-y: scroll
+    }
+    .product-item_img {
+        width: 40%;
+    }
+    .product-item .dtls .prdct-item_dtls {
+        width: 60%;
+    }
+    .td1 {
+        width: 35%;
+    }
+    .td2 {
+        width: 65%;
+    }
+    .general-wrapper {
+        max-width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+        overflow: hidden;
+    }
+    .find-a-mobile .find-a-mobile-btn {
+        font-size: 0.75rem;
+    }
+    .main-navbar .user-icon .dropstart {
+        padding-top: 0.125rem;
+        padding-bottom: 0.125rem;
+    }
+    .user-icon .dropdown-menu.notification {
+        font-size: 0.75rem;
+    }
+    .user-icon .dropdown-menu .head .read-text {
+        font-size: 0.75rem;
+    }
+    .user-icon .dropdown-menu h2 {
+        font-size: 0.75rem;
+    }
+    .find-a-mobile input[name="fromprice"],
+    input[name="toprice"] {
+        width: 120px;
+    }
+    /* single product page start */
+    /*********** product details ***********/
+    .product-details .price-and-variant .price {
+        min-width: 55%;
+    }
+    .options .obtion-btn {
+        padding: 5px 6px 5px 5px !important;
+        font-size: 16px;
+        line-height: 0;
+    }
+    .options .obtion-btn:hover {
+        background: #fff !important;
+    }
+    .compare-row>div:first-child::before {
+        top: 80% !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+    .compare-list-img {
+        height: 4rem;
+    }
+    .add-product-btn {
+        min-height: 100px !important;
+    }
+    /* key specs */
+    .aditional-info .aditional-item {
+        margin: 5px;
+    }
+    .aditional-info .aditional-item .text {
+        display: none;
+    }
+    .info-header {
+        font-size: 12px;
+        background: #eeeeee73;
+        border-top: 1px solid #e0e0e08f;
+    }
+    /* review desc */
+    .review-desc .col-12 .review-item {
+        margin-bottom: 0.5rem;
+    }
+    .review-desc .col-12:last-child .review-item {
+        margin-bottom: 0;
+    }
+    .featured-img-container {
+        border: 0 !important;
+    }
+    /* details navigation start */
+    #spyThroughThis ul::-webkit-scrollbar {
+        display: none;
+    }
+    #spyThroughThis ul {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    #spyThroughThis .nav-link {
+        font-size: 0.875rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    /* details navigation end */
+    .our-rating-container {
+        border-bottom: 2px solid #bdbdbd;
+    }
+    .our-rating-container em {
+        font-size: 14px !important;
+    }
+    .rating-single {
+        background: transparent !important;
+    }
+    .review-sec-top {
+        margin-left: 0 !important;
+    }
+    .sml-img-wrapper a {
+        font-size: 0.75rem;
+    }
+    /************** short info ***************/
+    /* key specs */
+    .key-specs .info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .key-specs .info-grid .info .icon {
+        font-size: 1.75rem;
+        width: 42px;
+        height: 42px;
+    }
+    .key-specs .info-grid .info .text p {
+        font-size: 0.75rem;
+    }
+    .aditional-info {
+        margin-bottom: 1rem;
+    }
+    /* product spec variant start */
+    .product-spec-variant .product-specs-tbl .specs-group {
+        overflow-x: auto;
+    }
+    .product-spec-variant .product-specs-tbl .specs-group::-webkit-scrollbar {
+        height: 5px;
+    }
+    .product-spec-variant .product-specs-tbl .specs-group::-webkit-scrollbar-thumb {
+        background-color: royalblue;
+    }
+    .product-spec-variant .product-specs-tbl table tbody td {
+        font-size: 0.75rem;
+    }
+    /* product spec variant end */
+    .options .obtion-btn {
+        width: 100%;
+    }
+    /* trip advisors */
+    .trip-advisors .trip-item .title {
+        font-size: 0.75rem;
+    }
+    .trip-advisors .trip-item {
+        padding: 0.125rem !important;
+    }
+    .trip-advisors .trip-item .stars {
+        margin-top: -0.375rem !important;
+    }
+    .trip-advisors .trip-item .stars i {
+        font-size: 0.75rem;
+    }
+    /* video specification start */
+    .video-specification {
+        flex-direction: column;
+    }
+    .video-specification .featured-video iframe {
+        height: 220px;
+    }
+    .video-specification .optional-videos {
+        width: unset;
+    }
+    .video-specification .optional-videos .video .video-img {
+        width: 160px;
+        height: 90px;
+    }
+    /* video specification end */
+    /* product review start */
+    .review-box .rev-body .body-item {
+        flex-basis: 100%;
+        margin-bottom: 10px;
+    }
+    .modal .btn-close {
+        top: 1.5rem;
+        right: 1rem;
+        font-size: 1.5rem;
+    }
+    /* product review end */
+    /* revies form start */
+    .review-form-body .review-group .review-rating .text {
+        font-size: 0.75rem;
+    }
+    /* revies form end */
+    /* discussions start */
+    .comments {
+        font-size: 0.75rem;
+    }
+    /* discussions end */
+    /* single product page end */
+    /* single review start */
+    .blog-feature-img h1 {
+        padding: 0.325rem 0.5rem;
+        font-size: 1rem;
+    }
+    .blog-feature-img .review-meta span,
+    .blog-feature-img .stars {
+        font-size: 0.625rem;
+    }
+    /* single review end */
+    /* top 10 start */
+    .product-grid .product-item .col-12.col-md-4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .prdct-item_dtls .item-dtls-top h2.h5 {
+        font-size: 1rem !important;
+    }
+    .prdct-item_dtls .item-dtls_body ul {
+        grid-template-columns: 1fr;
+    }
+    /* top 10 end */
+    /* product comparision table start */
+    #product-compare-tbl .header {
+        text-align: center;
+    }
+    .product-specs-tbl .specs-list .specs-list-item .specs-values .value-item {
+        min-width: 130px;
+        max-width: 130px;
+    }
+    .product-specs-tbl .specs-list-item .specs-values .value-item h2 a {
+        font-size: 0.875rem;
+    }
+    .product-specs-tbl .specs-list-item .product-name,
+    .product-specs-tbl .specs-list-item .pn-values {
+        height: 56px;
+    }
+    .product-specs-tbl .specs-list-item .product-img,
+    .product-specs-tbl .specs-list-item .pi-values {
+        height: 120px;
+    }
+    .product-specs-tbl .specs-list-item .product-name,
+    .product-specs-tbl .specs-list-item .pn-values,
+    .product-specs-tbl .specs-list-item .product-brand,
+    .product-specs-tbl .specs-list-item .pb-values,
+    .product-specs-tbl .specs-list-item .product-gprs,
+    .product-specs-tbl .specs-list-item .pgprs-values,
+    .product-specs-tbl .specs-list-item .product-edge,
+    .product-specs-tbl .specs-list-item .pedge-values,
+    .product-specs-tbl .specs-list-item .product-weight,
+    .product-specs-tbl .specs-list-item .pw-values,
+    .product-specs-tbl .specs-list-item .product-multitouch,
+    .product-specs-tbl .specs-list-item .pm-values,
+    .product-specs-tbl .specs-list-item .product-protection,
+    .product-specs-tbl .specs-list-item .pptn-values,
+    .product-specs-tbl .specs-list-item .product-os,
+    .product-specs-tbl .specs-list-item .pos-values,
+    .product-specs-tbl .specs-list-item .product-gpu,
+    .product-specs-tbl .specs-list-item .pgpu-values,
+    .product-specs-tbl .specs-list-item .product-cardslot,
+    .product-specs-tbl .specs-list-item .pcs-values,
+    .product-specs-tbl .specs-list-item .product-internal,
+    .product-specs-tbl .specs-list-item .pintl-values,
+    .product-specs-tbl .specs-list-item .product-ram,
+    .product-specs-tbl .specs-list-item .pram-values,
+    .product-specs-tbl .specs-list-item .product-alt-types,
+    .product-specs-tbl .specs-list-item .patps-values,
+    .product-specs-tbl .specs-list-item .product-loudspks,
+    .product-specs-tbl .specs-list-item .plspks-values,
+    .product-specs-tbl .specs-list-item .product-35jack,
+    .product-specs-tbl .specs-list-item .p35j-values,
+    .product-specs-tbl .specs-list-item .product-bluetooth,
+    .product-specs-tbl .specs-list-item .pblutoth-values,
+    .product-specs-tbl .specs-list-item .product-nfc,
+    .product-specs-tbl .specs-list-item .pnfc-values,
+    .product-specs-tbl .specs-list-item .product-fm,
+    .product-specs-tbl .specs-list-item .pfm-values,
+    .product-specs-tbl .specs-list-item .product-usb,
+    .product-specs-tbl .specs-list-item .pusb-values,
+    .product-specs-tbl .specs-list-item .product-infrared,
+    .product-specs-tbl .specs-list-item .pinf-values,
+    .product-specs-tbl .specs-list-item .product-browser,
+    .product-specs-tbl .specs-list-item .pbrsr-values,
+    .product-specs-tbl .specs-list-item .product-java,
+    .product-specs-tbl .specs-list-item .pjava-values,
+    .product-specs-tbl .specs-list-item .product-btry-type,
+    .product-specs-tbl .specs-list-item .pbtrytyp-values,
+    .product-specs-tbl .specs-list-item .product-btry-capacity,
+    .product-specs-tbl .specs-list-item .pbtrycpty-values,
+    .product-specs-tbl .specs-list-item .product-madeby,
+    .product-specs-tbl .specs-list-item .pmadeby-values,
+    .product-specs-tbl .specs-list-item .product-model,
+    .product-specs-tbl .specs-list-item .pmodel-values {
+        height: 52px;
+    }
+    .product-specs-tbl .specs-list-item .product-announced,
+    .product-specs-tbl .specs-list-item .pa-values,
+    .product-specs-tbl .specs-list-item .product-technology,
+    .product-specs-tbl .specs-list-item .pt-values,
+    .product-specs-tbl .specs-list-item .product-dimensions,
+    .product-specs-tbl .specs-list-item .pd-values,
+    .product-specs-tbl .specs-list-item .product-sim,
+    .product-specs-tbl .specs-list-item .psim-values,
+    .product-specs-tbl .specs-list-item .product-type,
+    .product-specs-tbl .specs-list-item .ptpe-values,
+    .product-specs-tbl .specs-list-item .product-resolution,
+    .product-specs-tbl .specs-list-item .prsln-values,
+    .product-specs-tbl .specs-list-item .product-features,
+    .product-specs-tbl .specs-list-item .pf-values,
+    .product-specs-tbl .specs-list-item .product-chipset,
+    .product-specs-tbl .specs-list-item .pchip-values,
+    .product-specs-tbl .specs-list-item .product-sec-camera,
+    .product-specs-tbl .specs-list-item .psc-values,
+    .product-specs-tbl .specs-list-item .product-messaging,
+    .product-specs-tbl .specs-list-item .pmsg-values,
+    .product-specs-tbl .specs-list-item .product-color,
+    .product-specs-tbl .specs-list-item .pcolor-values {
+        height: 68px;
+    }
+    .product-specs-tbl .specs-list-item .product-2g-bands,
+    .product-specs-tbl .specs-list-item .p2g-values,
+    .product-specs-tbl .specs-list-item .product-3g-bands,
+    .product-specs-tbl .specs-list-item .p3g-values,
+    .product-specs-tbl .specs-list-item .product-4g-bands,
+    .product-specs-tbl .specs-list-item .p4g-values,
+    .product-specs-tbl .specs-list-item .product-5g-bands,
+    .product-specs-tbl .specs-list-item .p5g-values,
+    .product-specs-tbl .specs-list-item .product-speed,
+    .product-specs-tbl .specs-list-item .pspd-values,
+    .product-specs-tbl .specs-list-item .product-build,
+    .product-specs-tbl .specs-list-item .pbld-values,
+    .product-specs-tbl .specs-list-item .product-size,
+    .product-specs-tbl .specs-list-item .ps-values,
+    .product-specs-tbl .specs-list-item .product-cpu,
+    .product-specs-tbl .specs-list-item .pcpu-values,
+    .product-specs-tbl .specs-list-item .product-cam-feature,
+    .product-specs-tbl .specs-list-item .pcf-values,
+    .product-specs-tbl .specs-list-item .product-video,
+    .product-specs-tbl .specs-list-item .pv-values,
+    .product-specs-tbl .specs-list-item .product-wlan,
+    .product-specs-tbl .specs-list-item .pwlan-values,
+    .product-specs-tbl .specs-list-item .product-gps,
+    .product-specs-tbl .specs-list-item .pgps-values,
+    .product-specs-tbl .specs-list-item .product-sensors,
+    .product-specs-tbl .specs-list-item .psnrs-values,
+    .product-specs-tbl .specs-list-item .product-charging,
+    .product-specs-tbl .specs-list-item .pcharge-values {
+        height: 90px;
+    }
+    .product-specs-tbl .specs-list-item .product-pri-camera,
+    .product-specs-tbl .specs-list-item .ppc-values {
+        height: 200px;
+    }
+    /* product comparision table end */
+    /* ==================== start ==================== */
+    .varsti .vartit {
+        width: 100%;
+    }
+    .varsti .varcont {
+        width: 100%;
+    }
+    .list-active {
+        max-height: 410px !important;
+    }
+    .brand-img {
+        height: 4rem !important;
+    }
+}
+
+/* Extra small devices (phones, 400px and down) */
+
+@media only screen and (max-width: 400px) {
+    .short-info .info-header .col-4,
+    .short-info .info-header .col-4 span {
+        font-size: 0.65rem;
+    }
+    .key-specs .info-grid .info .text span:nth-child(2) {
+        font-size: 13px;
+    }
+    .populated-items .products .product-box {}
+    .vtst {
+        font-size: 13px;
+        line-height: 11px;
+    }
+    .ptst {
+        font-size: 12px;
+    }
+}
+
+/* breakpoint end */
